@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Vanta c015.26.09.21 Documentation</title>
+
+    <link rel="stylesheet"
+          href="/vanta/assets/style.css">
+
+</head>
+
+
+<body>
+
+<header class="site-header">
+
+    <div class="nav-container">
+
+        <a class="logo" href="/vanta">
+            <span class="logo-mark">V</span>
+            <span>Vanta</span>
+        </a>
+
+        <button class="menu-button" id="menuButton">
+            ☰
+        </button>
+
+        <nav id="mainNav">
+            <a href="/vanta">Home</a>
+            <a class="active"
+               href="/vanta/docs">
+                Docs
+            </a>
+            <a href="/vanta/download">
+                Download
+            </a>
+            <a href="https://github.com/knoob1517/vanta">
+                GitHub
+            </a>
+        </nav>
+
+    </div>
+
+</header>
+
+
+<div class="documentation-layout">
+
+
+    <aside class="sidebar">
+
+        <div class="sidebar-version">
+            <strong>Vanta</strong>
+            <span>c015.26.09.21</span>
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <a href="#introduction">
+                Introduction
+            </a>
+
+            <a href="#installation">
+                Installation
+            </a>
+
+            <a href="#syntax">
+                Syntax
+            </a>
+
+            <a href="#variables">
+                Variables
+            </a>
+
+            <a href="#types">
+                Types
+            </a>
+
+            <a href="#operators">
+                Operators
+            </a>
+
+            <a href="#control-flow">
+                Control flow
+            </a>
+
+            <a href="#functions">
+                Functions
+            </a>
+
+            <a href="#lists">
+                Lists
+            </a>
+
+            <a href="#exceptions">
+                Exceptions
+            </a>
+
+            <a href="#file-io">
+                File I/O
+            </a>
+
+            <a href="#vtui">
+                vtUI
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <main class="documentation">
+
+        <div class="doc-header">
+
+            <div>
+
+                <span class="eyebrow">
+                    Vanta Documentation
+                </span>
+
+                <h1>
+                    Vanta c015.26.09.21
+                </h1>
+
+            </div>
+
+
+            <select id="versionSelect">
+
+                <option value="/vanta/docs/c015.26.09.21">
+                    c015.26.09.21
+                </option>
+
+                <option value="/vanta/docs/c014.26.09.XX">
+                    c014
+                </option>
+
+                <option value="/vanta/docs/c013.26.09.XX">
+                    c013
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <section id="introduction">
+
+            <h2>Introduction</h2>
+
+            <p>
+                Vanta is a lightweight programming language
+                written in C.
+            </p>
+
+            <p>
+                This documentation describes the syntax,
+                built-in functions, runtime behavior and
+                features available in this version.
+            </p>
+
+        </section>
+
+
+        <section id="installation">
+
+            <h2>Installation</h2>
+
+            <p>
+                Download the Vanta interpreter and place it
+                somewhere on your system.
+            </p>
+
+            <pre><code>vanta.exe hello.vt</code></pre>
+
+        </section>
+
+
+        <section id="syntax">
+
+            <h2>Syntax</h2>
+
+            <p>
+                A simple Vanta program:
+            </p>
+
+            <pre><code>print("Hello, world!")</code></pre>
+
+        </section>
+
+
+        <section id="variables">
+
+            <h2>Variables</h2>
+
+            <p>
+                Variables can be declared using
+                <code>let</code>.
+            </p>
+
+            <pre><code>let name = "Vanta"
+let age = 1
+
+print(name)
+print(age)</code></pre>
+
+        </section>
+
+
+        <section id="types">
+
+            <h2>Types</h2>
+
+            <p>
+                Vanta supports several fundamental value types.
+            </p>
+
+            <ul>
+                <li>Number</li>
+                <li>String</li>
+                <li>Boolean</li>
+                <li>List</li>
+                <li>Null</li>
+            </ul>
+
+        </section>
+
+
+        <section id="operators">
+
+            <h2>Operators</h2>
+
+            <pre><code>let a = 10
+let b = 3
+
+print(a + b)
+print(a - b)
+print(a * b)
+print(a / b)</code></pre>
+
+        </section>
+
+
+        <section id="control-flow">
+
+            <h2>Control flow</h2>
+
+            <h3>if</h3>
+
+            <pre><code>if x > 10 {
+    print("large")
+} else {
+    print("small")
+}</code></pre>
+
+
+            <h3>while</h3>
+
+            <pre><code>let x = 0
+
+while x < 10 {
+    print(x)
+    x = x + 1
+}</code></pre>
+
+
+            <h3>for</h3>
+
+            <pre><code>for i = 0; i < 10; i = i + 1 {
+    print(i)
+}</code></pre>
+
+        </section>
+
+
+        <section id="functions">
+
+            <h2>Functions</h2>
+
+            <pre><code>fn greet(name) {
+    print("Hello, " + name)
+}
+
+greet("Vanta")</code></pre>
+
+        </section>
+
+
+        <section id="lists">
+
+            <h2>Lists</h2>
+
+            <pre><code>let numbers = [1, 2, 3, 4]
+
+print(numbers[0])</code></pre>
+
+        </section>
+
+
+        <section id="exceptions">
+
+            <h2>Exceptions</h2>
+
+            <pre><code>try {
+    let x = 10 / 0
+} catch {
+    print("Something went wrong")
+}</code></pre>
+
+        </section>
+
+
+        <section id="file-io">
+
+            <h2>File I/O</h2>
+
+            <pre><code>file_write(
+    "hello.txt",
+    "Hello from Vanta!"
+)
+
+let text = file_read("hello.txt")
+
+print(text)</code></pre>
+
+        </section>
+
+
+        <section id="vtui">
+
+            <h2>vtUI</h2>
+
+            <p>
+                vtUI provides graphical user interface
+                functionality for Vanta programs.
+            </p>
+
+            <pre><code>import "vtUI"
+
+window("My Vanta App", 800, 600)
+
+ui()</code></pre>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<footer>
+
+    <div class="copyright">
+        Vanta c015.26.09.21 · © 2026 Vanta Project
+    </div>
+
+</footer>
+
+
+<script src="/vanta/assets/main.js"></script>
+
+</body>
+
+</html>
